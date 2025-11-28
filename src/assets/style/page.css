@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --blue-primary: #002772;
+  --blue-primary-hover: #02389a;
+  --pink-primary: #720060;
+  --pink-primary-hover: #990082;
+  --gray-bg: #DCDCDC;
+  --blue-bg: #d6e6ff;
+  --pink-bg: #FDE2FF;
+  --gray-dark: #1e1e1e;
+  --gray-gelap: #3f3f3f;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Roboto";
+  position: relative;
+  }
+
+.page-men {
+  background-image: linear-gradient(to bottom, #d6e6ff 70%, white 30%);
+  }
+
+.page-men .title {
+  margin: 0;
+  margin-bottom: 1rem;
+  }
+
+.page-men .price { 
+  color: var(--blue-primary); 
+  }
+
+.page-men .rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+.page-men .btn-buy {
+  background-color: var(--blue-primary);
+  border: solid var(--blue-primary); 
+  color: white; 
+  width: 50%;
+  padding: 6px;
+  border-radius: 4px;
+  font-weight: medium;
+  font-size: medium;
+}
+
+.page-men .btn-buy:hover {
+  background-color: var(--blue-primary-hover);
+  border: solid var(--blue-primary-hover); 
+  }
+
+.page-men .btn-next {
+  border: solid; 
+  color: var(--blue-primary); 
+  width: 50%;
+  border-radius: 4px;
+  font-size: medium;
+  background-color: white;
+  font-weight: medium;
+  }
+
+.page-men .circle.filled {
+  background-color: var(--blue-primary);
+  border: 1px solid var(--blue-primary); 
+  border-radius: 100%;
+  height: 14px;
+  width: 14px;
+  }
+
+.page-women {
+  background-image: linear-gradient(to bottom, #d6e6ff 70%, white 30%);
+}
+
+.page-women .title {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.page-women .price { 
+  color: var(--pink-primary); 
+}
+
+.page-women .rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-women .btn-buy {
+  background-color: var(--pink-primary);
+  border: solid var(--pink-primary); 
+  color: white; 
+  width: 50%;
+  padding: 6px;
+  border-radius: 4px;
+  font-weight: medium;
+  font-size: medium;
+  }
+
+.page-women .btn-buy:hover {
+  background-color: var(--pink-primary-hover);
+  border: solid var(--pink-primary-hover); 
+  }
+
+.page-women .btn-next {
+  border: solid; 
+  color: var(--pink-primary); 
+  width: 50%;
+  border-radius: 4px;
+  font-size: medium;
+  background-color: white;
+  font-weight: medium;
+  }
+
+.page-women .circle.filled {
+  background-color: var(--pink-primary);
+  border: 1px solid var(--pink-primary); 
+  border-radius: 100%;
+  height: 14px;
+  width: 14px;
+  }
+
+.page-unavailable {
+  background-color: var(--gray-bg);
+  }
+.page-unavailable .product-card {
+  background-image: url('https://raw.githubusercontent.com/khai-tran/static-assets/main/not-found.png');
+}
+
+.product-card {
+  display: inline;
+  justify-items: center;
+  align-items: center;
+  background: white;
+  width: 60%;
+  height: 20%;
+  border-radius: 10px;
+  border: 1px solid var(--gray-bg);
+  display: flex;
+  padding: 30px;
+  gap: 40px;
+  box-shadow: 1px 2px;
+  }
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 3px;
+  margin: none;
+  }
+
+.description {
+  color: var(--gray-dark)
+  }
+
+.price {
+  margin-bottom: 6px;
+  font-size: larger;
+  }
+
+.category-row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  }
+
+.groub-category {
+  border-bottom: 1px solid var(--gray-bg);
+  margin-bottom: 1rem;
+  }
+
+.circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid var(--blue-primary);
+  margin-right: 4px;
+  display: inline-block;
+  background-color: transparent;
+  }
+
+.circle {
+  margin: 0.3px;
+  }
+
+.rate {
+  margin-right: 0.5rem;
+  }
+
+.category {
+  color: #6e6e6e
+  }
+
+.bottom-section {
+  border-top: 1px solid var(--gray-bg);
+  margin-top: 5rem;
+  }
+
+.product-image img {
+  max-width: 200px;
+  max-height: 400px;
+  }
