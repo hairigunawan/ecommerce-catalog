@@ -58,7 +58,79 @@
 </template>
 
 <script>
+export default {
+  data() {
+    return {
+      index: 1,
+      product: null,
+      loading: true,
+      shownCount: 0,        
+      isUnavailable: false  
+    };
+  },
 
+  computed: {
+    pageClass() {
+      if (!this.product) return "";
+
+      if (this.product.category === "men's clothing") return "page-men";
+      if (this.product.category === "women's clothing") return "page-women";
+
+      return "";
+    }
+  },
+
+  methods: {
+    async nextProduct() {
+
+      if (this.isUnavailable) {
+        this.shownCount = 0;
+        this.isUnavailable = false;
+        this.product = null;
+        return this.fetchProduct();
+      }
+
+      this.index++;
+      if (this.index > 20) this.index = 1;
+
+      await this.fetchProduct();
+    },
+
+    async fetchProduct() {
+      this.loading = true;
+
+      if (this.shownCount >= 4) {
+        this.product = null;
+        this.isUnavailable = true;
+        this.loading = false;
+        return;
+      }
+
+      let valid = false;
+
+      while (!valid) {
+        const url = `https://fakestoreapi.com/products/${this.index}`;
+        const response = await fetch(url);
+        const data = await response.json();
+
+        if (data.category === "men's clothing" || data.category === "women's clothing") {
+          this.product = data;
+          this.shownCount++;
+          valid = true;
+        } else {
+          this.index++;
+          if (this.index > 20) this.index = 1;
+        }
+      }
+
+      this.loading = false;
+    }
+  },
+
+  mounted() {
+    this.fetchProduct();
+  }
+};
 </script>
 
 
