@@ -1,11 +1,14 @@
 <template>
   <div class="container" :class="pageClass">
 
-    <div class="bg-pattern"></div>
-
     <div v-if="loading" class="card-loading">
-      <div class="loader">Loading...</div>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
+
 
     <div v-else-if="product" class="product-card">
       <div class="product-image">
@@ -47,7 +50,7 @@
       </div>
     </div>
 
-    <div v-else class="product-card unavailable-card">
+    <div v-else class="unavailable-card">
       <div class="unavailable-content">
         <p>This product is unavailable to show</p>
         <button class="btn btn-next-unavailable" @click="nextProduct">Next product</button>
