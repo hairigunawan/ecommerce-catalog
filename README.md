@@ -1,4 +1,4 @@
-## Tugas Akhir – VIX Frontend Engineering (Inisiatif Inti)
+## Tugas Akhir – VIX Frontend Engineering ( Core initiative )
 
 Repositori ini berisi pengerjaan Tugas Akhir VIX Core Initiative – Frontend Engineering, di mana saya membangun halaman katalog produk e-commerce menggunakan Vue.js 2, Vanilla CSS, serta melakukan integrasi API berdasarkan brief yang diberikan.
 
