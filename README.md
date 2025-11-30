@@ -1,8 +1,8 @@
-🚀 Tugas Akhir – VIX Frontend Engineering (Inisiatif Inti)
+## Tugas Akhir – VIX Frontend Engineering (Inisiatif Inti)
 
 Repositori ini berisi pengerjaan Tugas Akhir VIX Core Initiative – Frontend Engineering, di mana saya membangun halaman katalog produk e-commerce menggunakan Vue.js 2, Vanilla CSS, serta melakukan integrasi API berdasarkan brief yang diberikan.
 
-📌 Tujuan Proyek
+# Tujuan Proyek
 
 Pada tugas ini, saya bertanggung jawab untuk:
 
@@ -12,7 +12,7 @@ Menghubungkan halaman website dengan API sehingga aplikasi dapat berjalan dengan
 
 Mengimplementasikan seluruh fitur sesuai skenario dan requirement dari program.
 
-🧩 Teknologi & Tools yang Digunakan
+# Teknologi & Tools yang Digunakan
 
 Vue.js 2
 
@@ -25,7 +25,7 @@ Git & GitHub untuk version control dan submission
 
 Node.js versi terbaru
 
-🔧 Fitur Utama
+# Fitur Utama
 
 Fetch produk dari endpoint:
 https://fakestoreapi.com/products/{index} (indeks = 1–20)
@@ -49,7 +49,7 @@ Page-Unavailable untuk kategori lain
 
 Penerapan variable CSS untuk color palette dari Figma
 
-🎨 Desain Halaman
+# Desain Halaman
 
 Terdapat 3 jenis layout:
 
